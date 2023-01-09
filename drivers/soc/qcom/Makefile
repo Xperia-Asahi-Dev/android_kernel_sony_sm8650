@@ -122,3 +122,5 @@ obj-$(CONFIG_QTI_DMOF_SCMI) += qti_dmof_scmi.o
 obj-$(CONFIG_QCOM_PMIC_ECID) += qcom-pmic-ecid.o
 obj-$(CONFIG_QCOM_CX_IPEAK) += cx_ipeak.o
 obj-$(CONFIG_SENSORS_SSC) += sensors_ssc.o
+obj-$(CONFIG_MSM_SYSTEM_HEALTH_MONITOR) += health_monitor.o
+health_monitor-y := system_health_monitor_v01.o system_health_monitor.o
