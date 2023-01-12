@@ -885,6 +885,15 @@ choice
 		  DEBUG_SPINLOCK_BITE_ON_BUG.
 endchoice
 
+config GH_CPUSYS_VM_MEM_ACCESS
+        tristate "Qualcomm Technologies, Inc. CPUSYS VM shared mem access driver"
+        depends on GH_RM_DRV
+        help
+         Qualcomm Technologies, Inc. CPUSYS shared  mem access driver for MSM devices.
+         The drivers provides shared memory access to CPUSYS VM.
+         Say Y here to compile the driver as a part of kernel or M to compile
+         as a module.
+
 config GH_TLMM_VM_MEM_ACCESS
 	tristate "Qualcomm Technologies, Inc. TLMM VM mem access driver"
 	depends on GH_RM_DRV
@@ -1016,6 +1025,15 @@ config QCOM_HUNG_TASK_ENH
           select and monitor tasks in black/white list mode. Also
           processes in iowait for specific situation will be monitored
           to avoid devices long time no response.
+
+config QCOM_RAMDUMP
+	tristate "Qualcomm Technologies, Inc. Ramdump driver"
+	default n
+	help
+	  This option enables the QTI ramdump driver. The ramdump driver
+	  provides APIs to collect ramdumps which can be extracted from
+	  userspace. Say 'Y' here to enable this driver. It's safe to say
+	  'N' here if you don't plan on collecting ramdumps.
 
 config QCOM_ICC_BWMON
 	tristate "QCOM Interconnect Bandwidth Monitor driver"
