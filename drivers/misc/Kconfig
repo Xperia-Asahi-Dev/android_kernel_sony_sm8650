@@ -566,6 +566,14 @@ config TPS6594_ESM
 	  This driver can also be built as a module.  If so, the module
 	  will be called tps6594-esm.
 
+config QCOM_SMCI_PROXY
+	tristate "To enable smci proxy driver for kernel client"
+	help
+	 smci proxy driver serves the kernel clients by providing
+	 required ops via call back functions with a minimal framework.
+	 These callback functions can be used to get client objects from
+	 Trusted firmware.
+
 config TPS6594_PFSM
 	tristate "TI TPS6594 Pre-configurable Finite State Machine support"
 	depends on MFD_TPS6594
