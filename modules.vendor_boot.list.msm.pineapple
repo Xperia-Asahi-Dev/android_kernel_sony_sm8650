@@ -87,7 +87,6 @@ qnoc-cliffs.ko
 qnoc-pineapple.ko
 qnoc-qos.ko
 qnoc-volcano.ko
-qpnp-power-on.ko
 qrtr-gunyah.ko
 qrtr.ko
 qti-regmap-debugfs.ko

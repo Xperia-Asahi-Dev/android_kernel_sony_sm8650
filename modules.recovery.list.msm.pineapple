@@ -51,7 +51,6 @@ debugcc-pineapple.ko
 debugcc-volcano.ko
 debug-regulator.ko
 debug_symbol.ko
-device_info.ko
 dispcc-pineapple.ko
 dispcc-volcano.ko
 dmesg_dumper.ko
@@ -114,7 +113,6 @@ mem_buf_dev.ko
 mem_buf.ko
 mem_buf_msgq.ko
 memlat.ko
-mem-offline.ko
 memory_dump_v2.ko
 mhi_dev_satellite.ko
 mhi_dev_uci.ko
@@ -136,7 +134,6 @@ msm_sharedmem.ko
 msm_show_epoch.ko
 msm_show_resume_irq.ko
 msm_sysstats.ko
-nb7vpq904m.ko
 nvmem_qcom-spmi-sdam.ko
 nvmem_qfprom.ko
 panel_event_notifier.ko
@@ -223,7 +220,6 @@ qnoc-qos.ko
 qnoc-volcano.ko
 qpnp-amoled-regulator.ko
 qpnp-lcdb-regulator.ko
-qpnp-power-on.ko
 qrtr-gunyah.ko
 qrtr.ko
 qrtr-mhi.ko
@@ -231,6 +227,7 @@ qrtr-smd.ko
 qseecom_proxy.ko
 qsee_ipc_irq_bridge.ko
 qti_amoled_ecm.ko
+qti_battery_charger.ko
 qti_battery_debug.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
@@ -253,7 +250,6 @@ sched-walt.ko
 sdhci-msm.ko
 secure_buffer.ko
 sg.ko
-si_haptic.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
 smcinvoke_dlkm.ko
@@ -283,16 +279,13 @@ thermal_config.ko
 thermal_minidump.ko
 thermal_pause.ko
 tmecom-intf.ko
-tms_device_modules.ko
 ucsi_glink.ko
-ufcs_class.ko
 ufshcd-crypto-qti.ko
 ufs_qcom.ko
 usb_f_ccid.ko
 usb_f_cdev.ko
 usb_f_gsi.ko
 usb_f_qdss.ko
-usb_f_rndis.ko
 videocc-pineapple.ko
 videocc-volcano.ko
 wcd_usbss_i2c.ko

@@ -103,7 +103,6 @@ max31760_fan.ko
 mbhc_dlkm.ko
 mem-hooks.ko
 memlat.ko
-mem-offline.ko
 mhi_dev_satellite.ko
 mhi_dev_uci.ko
 mhi.ko
@@ -124,7 +123,6 @@ msm_show_epoch.ko
 msm_show_resume_irq.ko
 msm_sysstats.ko
 msm_video.ko
-nb7vpq904m.ko
 nvmem_qfprom.ko
 nxp-nci.ko
 panel_event_notifier.ko
@@ -185,6 +183,7 @@ qrtr-smd.ko
 qseecom_proxy.ko
 qsee_ipc_irq_bridge.ko
 qti_amoled_ecm.ko
+qti_battery_charger.ko
 qti_battery_debug.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
@@ -211,7 +210,6 @@ rmnet_shs.ko
 rmnet_wlan.ko
 rproc_qcom_common.ko
 sg.ko
-si_haptic.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
 smcinvoke_dlkm.ko
@@ -242,16 +240,13 @@ synx-driver.ko
 sysmon_subsystem_stats.ko
 sys_pm_vx.ko
 thermal_config.ko
-tms_device_modules.ko
 tz_log_dlkm.ko
 ubwcp.ko
 ucsi_glink.ko
-ufcs_class.ko
 usb_f_ccid.ko
 usb_f_cdev.ko
 usb_f_gsi.ko
 usb_f_qdss.ko
-usb_f_rndis.ko
 videocc-volcano.ko
 wcd9378_dlkm.ko
 wcd9378_slave_dlkm.ko
