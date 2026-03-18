@@ -310,6 +310,12 @@ config ARCH_PINEAPPLE
 	  chipset. If you do not wish to build a kernel that runs on this
 	  chipset or if you are unsure, say 'N' here.
 
+config MACH_SONY_DEVICE
+	bool "Enable support for Sony Asahi platform"
+	depends on ARCH_PINEAPPLE
+	help
+	  This enables support for Sony Pineapple (Asahi) devices.
+
 config ARCH_X1E80100
         bool "Enable Support for Qualcomm Technologies, Inc. X1E80100"
         depends on ARCH_QCOM
