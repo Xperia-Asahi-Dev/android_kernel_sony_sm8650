@@ -316,13 +316,19 @@ config MACH_SONY_DEVICE
 	help
 	  This enables support for Sony Pineapple (Asahi) devices.
 
+config MACH_SONY_PDX245
+	bool "Enable support for Sony PDX245"
+	depends on MACH_SONY_DEVICE
+	help
+	  This enables support for Sony PDX245 devices.
+
 config ARCH_X1E80100
         bool "Enable Support for Qualcomm Technologies, Inc. X1E80100"
-        depends on ARCH_QCOM
-        help
-          This enables support for the Qualcomm Technologies, Inc.'s
-          X1E80100 chipset. If you do not wish to build a kernel that
-          runs on this chipset or if you are unsure, say 'N' here.
+	depends on ARCH_QCOM
+	help
+	This enables support for the Qualcomm Technologies, Inc.'s
+	X1E80100 chipset. If you do not wish to build a kernel that
+	runs on this chipset or if you are unsure, say 'N' here.
 
 config ARCH_PARROT
 	bool "Enable Support for Qualcomm Technologies, Inc. PARROT"
