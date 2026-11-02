@@ -38,7 +38,7 @@ static ssize_t get_write_op(struct file *file, char const __user *buf,
 	if (ret)
 		return ret;
 
-	path = icc_get(&icc_pdev->dev, src_port, dst_port);
+	path = icc_get_compat(&icc_pdev->dev, src_port, dst_port);
 	if (IS_ERR(path))
 		return PTR_ERR(path);
 
