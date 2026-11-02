@@ -10,9 +10,8 @@ boot_stats.ko
 bt_fm_slim.ko
 btpower.ko
 bwmon.ko
-bwprof.ko
 c1dcvs_scmi_v2.ko
-camcc-volcano.ko
+camcc-pineapple.ko
 camera.ko
 cdsp-loader.ko
 cdsprm.ko
@@ -28,7 +27,6 @@ coresight-csr.ko
 coresight-cti.ko
 coresight-dummy.ko
 coresight-funnel.ko
-coresight-hwevent.ko
 coresight.ko
 coresight-remote-etm.ko
 coresight-replicator.ko
@@ -79,6 +77,7 @@ hwmon.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 icnss2.ko
+iommu-logger.ko
 ipam.ko
 ipanetm.ko
 ipclite.ko
@@ -132,7 +131,7 @@ phy-generic.ko
 phy-msm-snps-eusb2.ko
 phy-msm-ssusb-qmp.ko
 phy-qcom-emu.ko
-phy-qcom-ufs-qmp-v4.ko
+phy-qcom-ufs-qmp-v4-pineapple.ko
 pinctrl_lpi_dlkm.ko
 pinctrl-spmi-gpio.ko
 pinctrl-spmi-mpp.ko
@@ -155,8 +154,10 @@ qcom_glink.ko
 qcom_glink_smem.ko
 qcom_glink_spss.ko
 qcom-hv-haptics.ko
+qcom_ice.ko
 qcom_iommu_debug.ko
 qcom_lpm.ko
+qcom_pdr_msg.ko
 qcom_pil_info.ko
 qcom_pm8008-regulator.ko
 qcom-pon.ko
@@ -189,6 +190,7 @@ qti_devfreq_cdev.ko
 qti-fixed-regulator.ko
 qti-glink-adc.ko
 qti-ocp-notifier.ko
+qti_pmic_glink.ko
 qti_qmi_cdev.ko
 qti_qmi_sensor_v2.ko
 qti_userspace_cdev.ko
@@ -211,6 +213,7 @@ rproc_qcom_common.ko
 sg.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
+smci_proxy.ko
 smcinvoke_dlkm.ko
 smmu_proxy_dlkm.ko
 smp2p.ko
@@ -242,6 +245,7 @@ thermal_config.ko
 tz_log_dlkm.ko
 ubwcp.ko
 ucsi_glink.ko
+ucsi_qti_glink.ko
 usb_f_ccid.ko
 usb_f_cdev.ko
 usb_f_gsi.ko
@@ -261,3 +265,4 @@ wcd_usbss_i2c.ko
 wlan_firmware_service.ko
 wsa883x_dlkm.ko
 wsa884x_dlkm.ko
+xhci-sideband.ko
