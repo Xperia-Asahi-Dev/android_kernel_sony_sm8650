@@ -734,8 +734,7 @@ static int __init system_health_monitor_init(void)
 		return rc;
 	}
 
-	system_health_monitor_classp = class_create(THIS_MODULE,
-						"system_health_monitor");
+	system_health_monitor_classp = class_create("system_health_monitor");
 	if (IS_ERR_OR_NULL(system_health_monitor_classp)) {
 		SHM_ERR("%s: class_create() failed\n", __func__);
 		rc = -ENOMEM;
