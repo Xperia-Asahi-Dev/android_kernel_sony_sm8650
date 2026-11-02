@@ -1984,6 +1984,23 @@ int qcom_scm_lmh_fetch_data(u32 node_id, u32 debug_type, uint32_t *peak,
 }
 EXPORT_SYMBOL(qcom_scm_lmh_fetch_data);
 
+int qcom_scm_prefetch_tgt_ctrl(bool en)
+{
+	struct qcom_scm_desc desc = {
+		.svc = QCOM_SCM_SVC_CPUCFG,
+		.cmd = QCOM_SCM_CPUCFG_PREFETCH_TGT_CMD,
+		.owner = ARM_SMCCC_OWNER_SIP,
+		.args[0] = en,
+		.arginfo = QCOM_SCM_ARGS(1),
+	};
+
+	if (SCM_NOT_INITIALIZED())
+		return -ENODEV;
+
+	return qcom_scm_call_atomic(__scm->dev, &desc, NULL);
+}
+EXPORT_SYMBOL(qcom_scm_prefetch_tgt_ctrl);
+
 int qcom_scm_iommu_set_pt_format(u32 sec_id, u32 ctx_num, u32 pt_fmt)
 {
 	struct qcom_scm_desc desc = {
